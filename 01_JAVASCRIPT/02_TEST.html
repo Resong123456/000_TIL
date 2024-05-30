@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/02.css">
+</head>
+<body>
+    <h1>HTML 태그에 접근 테스트</h1>
+    <p>단, 구매자는 태그 이름으로 접근, 상품명은 아이디로 접근, 구매 가격은 name값으로 접근할 것</p>
+    
+    구매자: <input type="text" name="uName" id="uName" placeholder="구매자명 입력"> <br><br>
+    상품명: <input type="text" name="pName" id="pName" placeholder="상품명 입력"> <br><br>
+    가격: <input type="text" name="price" id="price" placeholder="가격 입력"> <br><br>
+
+    <button onclick="output();">입력값 출력</button> <br><br>
+
+    <form action="">
+        <fieldset id="field" name="field"></fieldset>
+    </form>
+
+    <script>
+        function output(){
+            var userName = document.getElementById("uName");
+            var goodsName = document.getElementById("pName");
+            var gPrice = document.getElementById("price");
+
+            var un = userName.value;
+            var gn = goodsName.value;
+            var gp = price.value;
+
+            document.getElementById("field").innerHTML = "구매자 : " + un + "<br>" + "상품명 : " + gn + "<br>" + "가격 : " + gp + "원";
+        }
+
+    </script>
+
+
+</body>
+</html>
