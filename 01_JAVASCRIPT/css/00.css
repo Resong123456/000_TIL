@@ -1,0 +1,16 @@
+#table_create_btn{
+    background-color: skyblue;
+    color: darkblue;
+    border-color: gray;
+}
+#mini_table{
+    border-color: skyblue;
+    width: 100px;
+    height: 100px;
+}
+
+#table_create_btn2{
+    background-color: pink;
+    color: darkred;
+    border-color: gray;
+}
