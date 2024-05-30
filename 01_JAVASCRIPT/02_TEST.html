@@ -20,17 +20,32 @@
         <fieldset id="field" name="field"></fieldset>
     </form>
 
+    <!-- 1번
     <script>
         function output(){
-            var userName = document.getElementById("uName");
-            var goodsName = document.getElementById("pName");
-            var gPrice = document.getElementById("price");
+            var input1 = document.getElementById("uName").value;
+            var input2 = document.getElementById("pName").value;
+            var input3 = document.getElementById("price").value;
 
-            var un = userName.value;
-            var gn = goodsName.value;
-            var gp = price.value;
+            document.getElementById("field").innerHTML = "구매자: " + input1 + "<br>" + "상품명: " + input2 + "<br>" + "가격: " + input3 + "원"
+        }
 
-            document.getElementById("field").innerHTML = "구매자 : " + un + "<br>" + "상품명 : " + gn + "<br>" + "가격 : " + gp + "원";
+    </script>
+    -->
+
+    <!-- 2번 -->
+    <script>
+        var input1 = document.getElementById("uName");
+        var input2 = document.getElementById("pName");
+        var input3 = document.getElementById("price");
+        
+        function output(){
+            
+            var un = input1.value;
+            var pn = input2.value;
+            var pr = input3.value;
+
+            document.getElementById("field").innerHTML = "구매자: " + un + "<br>" + "상품명: " + pn + "<br>" + "가격: " + pr + "원";
         }
 
     </script>
