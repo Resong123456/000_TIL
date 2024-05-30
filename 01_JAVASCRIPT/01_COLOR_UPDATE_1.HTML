@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLOR_UPDATE</title>
+    <link rel="stylesheet" href="css/01.css">
+</head>
+<body>
+    <p>1. 색상 선택 후 변경 클릭 시 변경되게</p>
+    
+    <div id="color_box"></div>
+    <input id="select_color" type="color" name="color">
+    <button onclick="color_update()">변경</button>
+
+
+    <script>
+        function color_update(){
+            var originColor = document.getElementById("color_box");
+            var selectColor = document.getElementById("select_color").value;
+
+            originColor.style.backgroundColor = selectColor;
+
+        }
+    </script>
+
+    <p>2. 버튼 클릭 시 크기 조절 가능</p>
+    <!-- 기본
+        <div id="size_box"></div>
+        <button>50x50</button>
+        <button>100x100(원본)</button>
+        <button>200x200</button> -->
+
+    <div id="size_box"></div>
+    <button id="a" onclick="update_size(50,50)">50x50</button>
+    <button id="b" onclick="update_size(100,100)">100x100(원본)</button>
+    <button id="c" onclick="update_size(200,200)">200x200</button>
+
+    <script>
+        function update_size(width,height){
+            var originSize = document.getElementById("size_box");
+            originSize.style.width = width +"px";
+            originSize.style.height = height + "px";
+        }
+    </script>
+
+
+</body>
+</html>
