@@ -20,6 +20,17 @@
         <fieldset id="field" name="field"></fieldset>
     </form>
 
+    <script>
+        function output(){
+            var input1 = document.getElementById("uName").value;
+            var input2 = document.getElementById("pName").value;
+            var input3 = document.getElementById("price").value;
+
+            document.getElementById("field").innerHTML = input1 + input2 + input3;
+        }
+
+    </script>
+
     <!-- 1번
     <script>
         function output(){
@@ -33,7 +44,7 @@
     </script>
     -->
 
-    <!-- 2번 -->
+    <!-- 2번 
     <script>
         var input1 = document.getElementById("uName");
         var input2 = document.getElementById("pName");
@@ -49,7 +60,7 @@
         }
 
     </script>
-
+-->
 
 </body>
 </html>
