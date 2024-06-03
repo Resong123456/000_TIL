@@ -29,7 +29,7 @@
     </script>
 
     <p>2. 문자열을 ,(콤마)를 기준으로 잘라내어 하나하나 출력</p>
-    <form action="test.do">
+    <!-- <form action="test.do"> -->
         <div id="food">
             <fieldset id="exam_field2">
                 <legend>보기</legend>
@@ -39,7 +39,10 @@
             <button id="food_click" onclick="examClick2()">클릭!</button>
         </div>
 
-        <script>
+        <!-- let, var 잘 돌아감-->
+        
+        <!-- 1번
+        <Script>
             function examClick2(){
                 let str = document.getElementById("foodArr").innerHTML;
                 let arr = str.split(",");
@@ -49,10 +52,25 @@
                     result += (i+1) + "." + arr[i] + "<br>";
                 }
                 document.getElementById("food_ex").innerHTML = result;
-            }   
+            }
+
+        </Script>
+        -->
+        <!-- 2번 -->
+        <script>
+            function examClick2(){
+                let arr = document.getElementById("foodArr").innerHTML.split(",");
+                let result = "";
+
+                for(let i = 0; i<arr.length; i++){
+                    result += (i+1) + "." + arr[i] + "<br>";
+                }
+                document.getElementById("food_ex").innerHTML = result;
+            }
 
         </script>
 
-    </form>
+
+    <!-- </form> -->
 </body>
 </html>
