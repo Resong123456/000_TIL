@@ -49,3 +49,32 @@
 #foodArr{
     margin: 0;
 }
+
+#flower{
+    border: 1px solid black;
+    width: 800px;
+    height: 300px;
+}
+
+#flower_field{
+    width: 750px;
+    margin: 1%;
+}
+
+#flower_write{
+    width: 700px;
+}
+
+#flower_div{
+    border: 1px solid greenyellow;
+    width: 776px;
+    height: 180px;
+    margin: 1%;
+}
+
+#flower_click{
+    margin-left: 1%;
+    border-color: darkgreen;
+    color: darkgreen ;
+    background-color: greenyellow;
+}

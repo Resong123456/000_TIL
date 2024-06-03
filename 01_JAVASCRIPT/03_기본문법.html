@@ -69,8 +69,33 @@
             }
 
         </script>
+    <!-- </form> -->
 
+    <br>
+    <p>3. 응용: 입력하고 , 기준 출력</p>
+    <!-- <form action="test2.do" method="post"> -->
+        <div id="flower">
+            <fieldset id="flower_field">
+                <legend>보기</legend>
+                <input type="text" id="flower_write">
+            </fieldset>
+            <div id="flower_div"></div>
+            <button id="flower_click" onclick="flowerClick()">클릭!</button>
+        </div>        
 
+        <script>
+            function flowerClick(){
+                var str = document.getElementById("flower_write").value;
+                var arr = str.innerHTML.split(",");
+                var result2 = "";
+
+                for(var i = 0; i<arr.length; i++){
+                    result2 += (i+1) + "." + arr[i] + "<br>";
+                }
+                document.getElementById("flower_div").innerHTML = result2;
+            }
+
+        </script>
     <!-- </form> -->
 </body>
 </html>
