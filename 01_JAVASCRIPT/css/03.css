@@ -5,3 +5,47 @@
 #exam{
     width: 700px;
 }
+
+#exam_field_length{
+    border: 1px solid pink;
+    width: 825px;
+    height: 200px;
+}
+
+#exam_click{
+    background-color: pink;
+    border-color: palevioletred;
+    color: darkmagenta;
+}
+
+#food{
+    border: 1px solid black;
+    width: 800px;
+    height: 300px;
+}
+
+#exam_field2{
+    width: 750px;
+    margin: 1%;
+}
+
+#exam2{
+    width: 700px;
+}
+
+#food_ex{
+    border: 1px solid skyblue;
+    width: 776px;
+    height: 180px;
+    margin: 1%;
+}
+
+#food_click{
+    margin-left: 1%;
+    border-color: navy;
+    color: navy ;
+    background-color: skyblue;
+}
+#foodArr{
+    margin: 0;
+}

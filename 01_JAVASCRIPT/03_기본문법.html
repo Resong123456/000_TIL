@@ -13,6 +13,46 @@
     <fieldset id="exam_field">
         <legend>보기</legend>
         <input type="text" name="exam" id="exam">
-    </fieldset>
+    </fieldset> <br>
+
+    <div id="exam_field_length"></div> <br>
+
+    <button id="exam_click" onclick="examClick()">클릭!</button>
+    
+    <script>
+        function examClick(){
+            const exFi = document.getElementById("exam").value;
+            const efl = document.getElementById("exam_field_length");
+
+            efl.innerHTML = "문자열 길이: " + exFi.length + "글자!";
+        }
+    </script>
+
+    <p>2. 문자열을 ,(콤마)를 기준으로 잘라내어 하나하나 출력</p>
+    <form action="test.do">
+        <div id="food">
+            <fieldset id="exam_field2">
+                <legend>보기</legend>
+                <p id="foodArr">감자, 고구마, 토마토, 오이, 가지</p>
+            </fieldset>
+            <div id="food_ex"></div>
+            <button id="food_click" onclick="examClick2()">클릭!</button>
+        </div>
+
+        <script>
+            function examClick2(){
+                let str = document.getElementById("foodArr").innerHTML;
+                let arr = str.split(",");
+                let result = "";
+
+                for(let i = 0; i<arr.length; i++){
+                    result += (i+1) + "." + arr[i] + "<br>";
+                }
+                document.getElementById("food_ex").innerHTML = result;
+            }   
+
+        </script>
+
+    </form>
 </body>
 </html>
