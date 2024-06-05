@@ -77,20 +77,21 @@
         <div id="flower">
             <fieldset id="flower_field">
                 <legend>보기</legend>
-                <input type="text" id="flower_write">
+                <input type="text" id="flower_write" name="flower_write">
             </fieldset>
             <div id="flower_div"></div>
             <button id="flower_click" onclick="flowerClick()">클릭!</button>
         </div>        
 
         <script>
+            
             function flowerClick(){
-                var str = document.getElementById("flower_write").value;
-                var arr = str.innerHTML.split(",");
+                var flowerstr = document.getElementById("flower_write").value;
+                var arr2 = flowerstr.split(",");
                 var result2 = "";
 
-                for(var i = 0; i<arr.length; i++){
-                    result2 += (i+1) + "." + arr[i] + "<br>";
+                for(var i = 0; i<arr2.length; i++){
+                    result2 += (i+1) + "." + arr2[i] + "<br>";
                 }
                 document.getElementById("flower_div").innerHTML = result2;
             }
